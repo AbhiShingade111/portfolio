@@ -2,35 +2,6 @@ html{
 scroll-behavior: smooth;
 }
 
-
-nav ul{
-list-style: none;
-display: flex;
-text-align: center;
-font-size: 17px;
-}
-
-nav ul li{
-margin: 0 10px;
-letter-spacing: 2px;
-}
-
-nav ul li a{
-color: #fff;
-text-decoration: none;
-font-weight: 800;
-padding: 8px 10px;
-border-radius: 5px;
-transition: all 0.4s ease;
-}
-
-nav ul li a:hover{
-background-color: white;
-color: black;
-}
-
-
-
 .my-intro{
 background-image: url('https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 background-repeat: no-repeat;
@@ -56,22 +27,6 @@ margin-top: 80px;
 margin-top: 50px;
 }
 
-
-
-
-#click{
-display:none;
-}
-
-nav .menu-btn i{
-color: white;
-display: none;
-cursor: pointer;
-font-size: 25px;
-}
-
-
-
 a{
 color: white;
 }
@@ -96,33 +51,6 @@ padding: 5em 0;
 margin-top: 3em;
 }
 
-/*
-ul.year{
-text-align: right;
-margin-left: 13em;
-
-}
-
-ul.year li{
-list-style: none;
-margin-top: 30px;
-font-size: 1em;
-color: #fff;
-text-align: center;
-background: #1b242f;
-padding: 11px 0;
-display: block;
-width: 60%;
-}
-
-ul.year li:nth-child(2){
-margin-top: 110px;
-}
-
-ul.year li:nth-child(3){
-margin-top: 129px;
-}
-*/
 .timeline{
 position: relative;
 padding: 10px 0 10px;
@@ -216,13 +144,10 @@ background-color: #44c7f4 !important;
 .footer{
 text-align:center;
 color: white;
-padding: 5em 0;
+background-image: linear-gradient(to bottom right, rgb(40, 40, 226),rgb(236, 93, 117),rgb(253, 166, 3));
 }
 
-
-
 .self-box{
-
 width: 350px;
 height: 250px;
 background-color: white;
@@ -240,10 +165,6 @@ position: relative;
 
 }
 
-
-
-
-
 .button2{
 text-align: center;
 }
@@ -253,8 +174,6 @@ color: #fff;
 font-size: 0.9em;
 line-height: 1.9em;
 }
-
-
 
 ul.social-icons{
 display: block;
@@ -271,9 +190,8 @@ margin: 1%;
 
 
 .skill{
-background-color: white;
-!background-image: -webkit-linear-gradient(0deg, #f2661b 0%, #04c20d 100%);
-padding: 5em 0;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(248, 241, 241));
+  padding: 5em 0;
 }
 
 .column {
@@ -281,17 +199,15 @@ height: 250px;
 width: 250px;
 float: left;
 background-color: white;
-box-shadow: 0px 0px 15px #cfcfd1;
+border: 1px solid gray;
 }
 
 
 .column:hover{
-box-shadow: 0px 0px 15px aqua;
+
+box-shadow: 7px 7px 15px black;
+transition: all 0.3s ease-in-out;
 }
-
-
-
-
 
 
 /*media query for mobile devices */
@@ -301,59 +217,6 @@ box-shadow: 0px 0px 15px aqua;
 
 @media screen and (max-width: 425px){
 
-nav .menu-btn i{
-display: block;
-margin-right: 50px;
-}
-
-#click:checked ~ .menu-btn i:before{
-content: "\f00d";
-font-size: 25px;
-}
-
-#abhi{
-margin-top: 15px;
-}
-
-nav ul{
-position: fixed;
-top: 60px;
-left: -100%;
-background: black;
-height: 100vh;
-width: 85%;
-display: block;
-text-align: center;
-transition: all 0.5s ease;
-}
-
-nav ul li a:after{
-left: -100%;
-}
-
-
-#click:checked ~ ul{
-left: 0%;
-}
-
-
-nav ul li{
-margin: 25px 0;
-}
-
-
-nav ul li a{
-font-size: 20px;
-}
-
-nav ul li a:hover{
-color: aqua;
-background-color: transparent!important;
-}
-
-nav ul li a:checked ~ nav ul{
-left: -100%;
-}
 
 .my-intro{
 height: 500px;
@@ -395,61 +258,6 @@ height: 1290px!important;
 
 
 @media screen and (min-width: 425px) and (max-width:800px){
-
-nav .menu-btn i{
-display: block;
-margin-right: 80px;
-}
-
-#click:checked ~ .menu-btn i:before{
-content: "\f00d";
-}
-
-#abhi{
-margin-top: 15px;
-}
-
-nav ul{
-position: fixed;
-top: 60px;
-left: -100%;
-background: black;
-height: 100vh;
-width: 88%;
-display: block;
-text-align: center;
-transition: all 0.5s ease;
-}
-
-nav ul li a:after{
-left: -100%;
-}
-
-
-#click:checked ~ ul{
-left: 0%;
-}
-
-
-nav ul li{
-margin: 35px 0;
-}
-
-
-nav ul li a{
-font-size: 20px;
-background-color: none;
-}
-
-nav ul li a:hover{
-color: aqua;
-background-color: transparent!important;
-}
-
-nav ul li a:checked ~ ul{
-left: -100%;
-}
-
 
 .footer{
 background-color: black;
